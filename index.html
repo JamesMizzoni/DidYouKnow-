@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DidYouKnow?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>DidYouKnow?</h1>
+      <p class="subtitle">A daily dose of awesome, quirky, and mind-blowing facts!</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <h2>About This Site</h2>
+      <p>DidYouKnow? is your home for fun and surprising facts from around the world. Learn something new, share your favorites, and even submit your own!</p>
+    </section>
+
+    <section class="facts-section">
+      <h2>📚 History Facts</h2>
+      <div class="fact" data-id="fact1">
+        <h4>The Great Wall of China <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+        <p>The Great Wall is over 13,000 miles long.</p>
+      </div>
+      <div class="fact" data-id="fact2">
+        <h4>Cleopatra <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+        <p>Cleopatra lived closer to the moon landing than to the Great Pyramid.</p>
+      </div>
+      <div class="fact" data-id="fact3">
+        <h4>Oxford Is Older Than the Aztecs <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+        <p>Oxford University began teaching in 1096, before the Aztec Empire existed.</p>
+      </div>
+      <div class="fact" data-id="fact4">
+        <h4>Shortest War in History <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+        <p>Britain and Zanzibar fought a war that lasted just 38 minutes.</p>
+      </div>
+
+      <h2>🌍 Nature & Science Facts</h2>
+      <div class="fact" data-id="fact5">
+        <h4>Bananas Are Berries <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+        <p>Botanically, bananas are classified as berries, but strawberries aren't.</p>
+      </div>
+      <div class="fact" data-id="fact6">
+        <h4>Octopuses Have Three Hearts <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+        <p>Two pump blood to the gills, one pumps it to the rest of the body.</p>
+      </div>
+      <div class="fact" data-id="fact7">
+        <h4>Honey Never Spoils <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+        <p>Archaeologists found 3,000-year-old edible honey in Egyptian tombs.</p>
+      </div>
+      <div class="fact" data-id="fact8">
+        <h4>Hot Water Freezes Faster <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+        <p>The Mpemba effect causes hot water to freeze faster than cold in some conditions.</p>
+      </div>
+      <div class="fact" data-id="fact9">
+        <h4>Sharks Are Older Than Trees <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+        <p>Sharks have existed for over 400 million years — trees came later.</p>
+      </div>
+      <div class="fact" data-id="fact10">
+        <h4>Sloths Hold Breath Longer Than Dolphins <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+        <p>Sloths can hold their breath up to 40 minutes — longer than dolphins.</p>
+      </div>
+
+      <h2>🍔 Food Facts</h2>
+<div class="fact" data-id="fact11">
+  <h4>Tomatoes Are Fruits <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Botanically speaking, tomatoes are fruits, not vegetables.</p>
+</div>
+<div class="fact" data-id="fact12">
+  <h4>Chocolate Was Once Currency <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>The Aztecs used cacao beans as currency.</p>
+</div>
+<div class="fact" data-id="fact13">
+  <h4>Carrots Were Originally Purple <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Orange carrots were cultivated in the Netherlands in the 17th century.</p>
+</div>
+<div class="fact" data-id="fact61">
+  <h4>Apples Float in Water <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>That's because 25% of their volume is air!</p>
+</div>
+<div class="fact" data-id="fact62">
+  <h4>Potatoes Were the First Food Grown in Space <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>NASA and the University of Wisconsin created the technology.</p>
+</div>
+<div class="fact" data-id="fact63">
+  <h4>Peanuts Aren't Nuts <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>They’re legumes, like beans and lentils.</p>
+</div>
+<div class="fact" data-id="fact64">
+  <h4>The World’s Most Expensive Pizza Costs $12,000 <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It takes 72 hours to make and includes luxury ingredients.</p>
+</div>
+<div class="fact" data-id="fact65">
+  <h4>Chewing Gum Boosts Focus <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Studies show it can increase alertness and attention.</p>
+</div>
+<div class="fact" data-id="fact66">
+  <h4>Watermelons Are 92% Water <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>No wonder they're so refreshing!</p>
+</div>
+<div class="fact" data-id="fact67">
+  <h4>Cucumbers Are Fruits Too <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>They grow from flowers and contain seeds.</p>
+</div><h2>💡 Inventions & Tech</h2>
+<div class="fact" data-id="fact14">
+  <h4>Google Was Originally Called Backrub <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Its creators changed the name to Google in 1997.</p>
+</div>
+<div class="fact" data-id="fact15">
+  <h4>The First Website Is Still Online <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>The first website ever made is still active at CERN's servers.</p>
+</div>
+<div class="fact" data-id="fact70">
+  <h4>Wi-Fi Was Invented by Accident <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It was a by-product of a project detecting black holes.</p>
+</div>
+<div class="fact" data-id="fact71">
+  <h4>3D Printing Existed in the 1980s <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>The first 3D printer was created in 1984.</p>
+</div>
+<div class="fact" data-id="fact72">
+  <h4>Bluetooth Is Named After a Viking King <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>King Harald Bluetooth unified Denmark and Norway.</p>
+</div>
+<div class="fact" data-id="fact73">
+  <h4>QR Codes Were Invented in Japan <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>They were created to track car parts in factories.</p>
+</div>
+<div class="fact" data-id="fact74">
+  <h4>The First Mouse Was Made of Wood <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Douglas Engelbart built it in 1964.</p>
+</div>
+<div class="fact" data-id="fact75">
+  <h4>NASA Invented Memory Foam <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It was designed to improve crash protection in aircraft seats.</p>
+</div>
+<div class="fact" data-id="fact76">
+  <h4>Typing “=rand()” in Word Generates Text <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It fills the document with sample paragraphs.</p>
+</div>
+<div class="fact" data-id="fact77">
+  <h4>The First Cell Phone Call Was Made in 1973 <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It was made by Martin Cooper of Motorola.</p>
+</div>
+<h2>🎬 Pop Culture</h2>
+<div class="fact" data-id="fact16">
+  <h4>The Simpsons Predicted Smartwatches <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>An episode from 1995 showed a character talking into a watch.</p>
+</div>
+<div class="fact" data-id="fact17">
+  <h4>Marvel's Groot Only Says Three Words <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>"I am Groot" is the only phrase the character speaks.</p>
+</div>
+<div class="fact" data-id="fact80">
+  <h4>The Oscars Used to Be Called the Academy Awards <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>The nickname "Oscar" became official in 1939.</p>
+</div>
+<div class="fact" data-id="fact81">
+  <h4>There Are More LEGO Figures Than People <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>LEGO minifigures outnumber humans on Earth.</p>
+</div>
+<div class="fact" data-id="fact82">
+  <h4>The First YouTube Video Was Uploaded in 2005 <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It’s titled "Me at the zoo" and features one of the founders.</p>
+</div>
+<div class="fact" data-id="fact83">
+  <h4>The First Reality TV Show Was in 1973 <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It was called "An American Family" and aired on PBS.</p>
+</div>
+<div class="fact" data-id="fact84">
+  <h4>Batman Once Fought Dracula <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It happened in an animated movie from 2005.</p>
+</div>
+<div class="fact" data-id="fact85">
+  <h4>The Most-Watched TV Finale Was M*A*S*H <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Over 100 million people watched the final episode in 1983.</p>
+</div>
+<div class="fact" data-id="fact86">
+  <h4>Walt Disney Was Afraid of Mice <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Despite creating Mickey, Disney had a fear of rodents.</p>
+</div>
+<div class="fact" data-id="fact87">
+  <h4>MTV Launched in 1981 With a Song About Video <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>The first song was "Video Killed the Radio Star."</p>
+</div>
+<h2>😲 Human Body</h2>
+<div class="fact" data-id="fact18">
+  <h4>Your Bones Are Stronger Than Steel <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Cubic inch of bone can withstand more pressure than concrete.</p>
+</div>
+<div class="fact" data-id="fact19">
+  <h4>The Human Nose Can Detect Trillions of Scents <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>New research suggests the nose is much more sensitive than we thought.</p>
+</div>
+<div class="fact" data-id="fact90">
+  <h4>Your Stomach Gets a New Lining Every Few Days <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>This prevents it from digesting itself!</p>
+</div>
+<div class="fact" data-id="fact91">
+  <h4>The Smallest Bone is in Your Ear <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>The stapes is only 0.1 inches long.</p>
+</div>
+<div class="fact" data-id="fact92">
+  <h4>Goosebumps Are a Survival Trait <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>They help trap heat by raising body hair.</p>
+</div>
+<div class="fact" data-id="fact93">
+  <h4>Babies Have More Bones Than Adults <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>They start with around 270, which fuse to 206 over time.</p>
+</div>
+<div class="fact" data-id="fact94">
+  <h4>Humans Share 60% of Their DNA With Bananas <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It's not a joke—DNA is wildly similar across life forms.</p>
+</div>
+<div class="fact" data-id="fact95">
+  <h4>Yawning Cools Your Brain <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It's your body's way of regulating brain temperature.</p>
+</div>
+<div class="fact" data-id="fact96">
+  <h4>The Average Heart Beats Over 100,000 Times a Day <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>That's about 35 million times per year!</p>
+</div>
+<div class="fact" data-id="fact97">
+  <h4>Your Tongue is a Muscle That Never Tires <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It’s constantly working—even while you sleep.</p>
+</div>
+<h2>🧠 Brain Benders</h2>
+<div class="fact" data-id="fact200">
+  <h4>Your Brain Uses 20% of Your Energy <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Even though it’s only 2% of your body weight.</p>
+</div>
+<div class="fact" data-id="fact201">
+  <h4>You Can't Tick Yourself <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Your brain predicts the sensation and cancels the surprise.</p>
+</div>
+<div class="fact" data-id="fact202">
+  <h4>Dreams Can Last Seconds or Hours <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Time is experienced differently while dreaming.</p>
+</div>
+<div class="fact" data-id="fact203">
+  <h4>The Brain Has No Pain Receptors <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Brain surgeries can occur while patients are awake.</p>
+</div>
+<div class="fact" data-id="fact204">
+  <h4>Memories Are Rewritten When Recalled <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Each time you remember, the brain slightly alters the memory.</p>
+</div>
+<h2>🧪 Weird Science</h2>
+<div class="fact" data-id="fact205">
+  <h4>Water Can Boil and Freeze at the Same Time <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>This is called the triple point of water.</p>
+</div>
+<div class="fact" data-id="fact206">
+  <h4>You Can Start a Fire with Ice <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Clear ice shaped into a lens can focus sunlight to ignite tinder.</p>
+</div>
+<div class="fact" data-id="fact207">
+  <h4>A Day on Venus Is Longer Than Its Year <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It rotates slower than it orbits the sun.</p>
+</div>
+<div class="fact" data-id="fact208">
+  <h4>Some Metals Explode in Water <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Like sodium and potassium, due to extreme reactivity.</p>
+</div>
+<div class="fact" data-id="fact209">
+  <h4>Lightning Is Hotter Than the Sun <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>A bolt can reach 30,000 Kelvin, five times hotter than the sun’s surface.</p>
+</div>
+<h2>🏅 Sports Facts</h2>
+<div class="fact" data-id="fact300">
+  <h4>The Olympic Games Date Back to 776 BC <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>The first recorded Olympic Games were held in ancient Greece.</p>
+</div>
+<div class="fact" data-id="fact301">
+  <h4>Basketball Was Invented by a Canadian <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>James Naismith created basketball in 1891.</p>
+</div>
+<div class="fact" data-id="fact302">
+  <h4>The Fastest Red Card Was in Two Seconds <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Lee Todd was sent off just two seconds into a game for foul language.</p>
+</div>
+<div class="fact" data-id="fact303">
+  <h4>A Golf Ball Has Around 336 Dimples <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>These dimples help reduce drag and increase lift.</p>
+</div>
+<div class="fact" data-id="fact304">
+  <h4>Michael Phelps Has 23 Olympic Gold Medals <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>He holds the record for the most Olympic golds in history.</p>
+</div>
+<h2>⛅ Weather Facts</h2>
+<div class="fact" data-id="fact305">
+  <h4>The Highest Temperature Ever Recorded Was 134°F <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>This occurred in Furnace Creek Ranch, California, in 1913.</p>
+</div>
+<div class="fact" data-id="fact306">
+  <h4>Lightning Strikes the Earth About 100 Times Per Second <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>That's over 8 million times per day!</p>
+</div>
+<div class="fact" data-id="fact307">
+  <h4>The Coldest Temperature Recorded on Earth Was −128.6°F <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>This occurred in Antarctica in 1983.</p>
+</div>
+<div class="fact" data-id="fact308">
+  <h4>Raindrops Aren’t Tear-Shaped <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>They actually resemble hamburger buns as they fall.</p>
+</div>
+<div class="fact" data-id="fact309">
+  <h4>A Heatwave Can Make Train Tracks Bend <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>High temperatures can warp steel rails, causing travel delays.</p>
+</div>
+<h2>🇺🇸 Donald Trump Facts</h2>
+<div class="fact" data-id="fact400">
+  <h4>Trump Was a Reality TV Star <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>He hosted NBC's 'The Apprentice' from 2004 to 2015.</p>
+</div>
+<div class="fact" data-id="fact401">
+  <h4>He’s the First President Without Political or Military Experience <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Before the presidency, Trump had never held elected office or served in the military.</p>
+</div>
+<div class="fact" data-id="fact402">
+  <h4>Trump Owns a Skyscraper Called Trump Tower <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It’s located in Midtown Manhattan and was completed in 1983.</p>
+</div>
+<div class="fact" data-id="fact403">
+  <h4>He Was the Oldest First-Term President (Until Biden) <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Trump was 70 when inaugurated in 2017—until Biden broke that record at 78.</p>
+</div>
+<div class="fact" data-id="fact404">
+  <h4>Trump Has Been Impeached Twice <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>He is the only U.S. president to have been impeached twice by the House of Representatives.</p>
+</div>
+<div class="fact" data-id="fact405">
+  <h4>He Changed His Political Affiliation Multiple Times <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Trump has been a Democrat, Republican, Independent, and member of the Reform Party.</p>
+</div>
+<h2>🌎 Country Facts</h2>
+<div class="fact" data-id="fact500">
+  <h4>Russia Is the Largest Country in the World <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It covers over 11% of the Earth’s landmass.</p>
+</div>
+<div class="fact" data-id="fact501">
+  <h4>Canada Has the Most Lakes <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It holds more than half of the world's natural lakes.</p>
+</div>
+<div class="fact" data-id="fact502">
+  <h4>Australia Has More Kangaroos Than People <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>There are around 50 million kangaroos in Australia.</p>
+</div>
+<div class="fact" data-id="fact503">
+  <h4>Japan Has a Vending Machine for Every 50 People <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>There are over 5 million vending machines across the country.</p>
+</div>
+<div class="fact" data-id="fact504">
+  <h4>India Is the World’s Largest Democracy <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>Over 900 million people are eligible to vote.</p>
+</div>
+<div class="fact" data-id="fact505">
+  <h4>Vatican City Is the Smallest Country <span class="like-heart" onclick="handleHeart(this)">🤍</span></h4>
+  <p>It’s just 0.2 square miles in size and has around 800 residents.</p>
+</div>
+</section>
+<section class="contact-section">
+      <h2>Submit a Fun Fact</h2>
+      <form id="factForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="fact" placeholder="Your Fun Fact..." rows="5" required></textarea>
+        <button type="submit">Submit Fact</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DidYouKnow?. All rights reserved.</p>
+  </footer>
+
+  <audio id="heartSound" src="heart.mp3" preload="auto"></audio>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      loadLikedHearts();
+    });
+
+    function handleHeart(span) {
+      const factDiv = span.closest(".fact");
+      const factId = factDiv.getAttribute("data-id");
+      const sound = document.getElementById("heartSound");
+      let likedFacts = JSON.parse(localStorage.getItem("likedFacts")) || [];
+      const isLiked = likedFacts.includes(factId);
+
+      if (isLiked) {
+        likedFacts = likedFacts.filter(id => id !== factId);
+        span.textContent = "🤍";
+      } else {
+        likedFacts.push(factId);
+        span.textContent = "❤️";
+      }
+
+      localStorage.setItem("likedFacts", JSON.stringify(likedFacts));
+
+      if (sound) {
+        sound.currentTime = 0;
+        sound.play().catch(err => console.warn("Audio blocked", err));
+      }
+    }
+
+    function loadLikedHearts() {
+      const likedFacts = JSON.parse(localStorage.getItem("likedFacts")) || [];
+      likedFacts.forEach(id => {
+        const fact = document.querySelector(`.fact[data-id="${id}"]`);
+        if (fact) {
+          const heart = fact.querySelector(".like-heart");
+          if (heart) heart.textContent = "❤️";
+        }
+      });
+    }
+
+    const form = document.getElementById("factForm");
+    const formMessage = document.getElementById("formMessage");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const fact = document.getElementById("fact").value.trim();
+
+      if (!name || !email || !fact) {
+        formMessage.textContent = "Please fill out all fields.";
+        formMessage.style.color = "red";
+        return;
+      }
+
+      formMessage.textContent = "✅ Thanks for submitting your fact!";
+      formMessage.style.color = "green";
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
